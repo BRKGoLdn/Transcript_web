@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style: none;
+    padding: 10px;
+    
+}
+li{
+    font-size: 2vi;
+    padding: 1vi;
+    display: inline;
+}
+.user{
+    font-size: 1.2vi;
+    margin-left: 28vw;
+}
+.title{
+    font-size: 2.6vi;
+}
+.container{
+    margin-top: 3vi;
+}
+.search_bar_div{
+    float: left;
+}
+.extra{
+    margin-left:7vw;
+    float: left;
+    margin-top: -1vw;
+}
+button{
+    width: 15vw;
+    background-color: rgb(120, 170, 170);
+    border: none;
+    border-radius: 50px;
+    height: 20px;
+}
+.under_button{
+    margin-top: 1vw;
+}
+input{
+    width: 20vw;
+    margin-left: 2vw;
+}
+table{
+    width: 100%;
+}
+table,tr,td{
+    
+    border: black solid 2px;
+}
+td{
+    padding: 2px;
+}
+
+th{
+    font-size: 1.6vi;
+}
+.setting_container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.setting_container>div{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    background-color: blueviolet;
+    border: 15px solid;
+    width:30vw;
+    height: 250px;
+    margin-left: 32%;
+    
+}
+.setting_container>div>button{
+    margin-top: -1vh;
+    margin-left: 25%;
+    background-color: aqua;
+}
+.close{
+    position: relative;
+    margin-left: 350px;
+
+}
+.close_btn{
+    width: 20px;
+}

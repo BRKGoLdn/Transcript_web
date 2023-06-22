@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/index.css">
+ <title> Home </title>
+{%endblock%}
+
+{%block body%}
+<ul class="header">
+        <li class="title">Salahaldin International School Database For Transcript</li>
+        <li class="user">{user}</li>
+</ul>
+
+<div class="container">
+    <form method="POST">
+        <div class="search_bar_div">
+            <input type="search" name="search_bar" placeholder="Search for the Student You Want">
+        </div>
+    
+    </form>
+
+    <div class="extra">
+        <button>Add New</button>
+        <button>All Data</button>
+        <button id="setting">Settings</button>
+        <br>
+        <button class="under_button">Bulk New</button>
+        <button class="under_button">Bulk Data</button>
+    </div>
+</div>  
+
+<br><br><br><br>
+<table>
+    <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Date of Birth</th>
+        <th>Enrollment</th>
+        <th>Graduation</th>
+        <th>Former School</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td>{studentID}</td>
+        <td>{name}</td>
+        <td>{dateofbirth}</td>
+        <td>{enrollment}</td>
+        <td>{graduation}</td>
+        <td>{formerschool}</td>
+        <td>{gender}</td>
+    </tr>
+</table>
+
+<div class="setting_container" id="setting_container" style="display: none;">
+    <div>
+        <span class="close" id="close"><button class="close_btn" id="close_btn">&times;</button> </span>
+        <button>School</button>
+        <button>Academic Years</button>
+        <button>Courses</button>
+        <button>Grades</button>
+        <button>Scale</button>
+        <button>Users</button>
+        <button>Finalize Academic Support</button>
+        
+    </div>
+    
+
+</div>
+
+
+
+<script src="/static/js/index.js"></script>
+
+{%endblock%}

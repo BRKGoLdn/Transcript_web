@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/container.css">
+<link rel="stylesheet" href="/static/css/index.css">
+<title> Home </title>
+<meta charset="utf-8">
+{%endblock%}
+
+{%block body%}
+<header>
+    <ul class="ule">
+        <li class="h1_ul"><a href="/">Home</a></li> 
+        <li>Bulk Data</li>
+        <li>Bulk New</li>
+        <li><a href="/setting">Setting</a> </li>
+        <li class="user">{USER}</li>
+        <li class="logout" > <button name="logout" class="btn">Logout</button> </li>
+    </ul>
+</header>
+
+<form method="POST">
+    <div class="container">
+        <div>
+            <input type="file" id="add_Data" name="add_Data">
+            <label for="add_Data" class="label_add">Add Data</label>
+            
+        </div>
+        <div >
+            <input type="search" name="search" placeholder="Enter the Name of the Student">
+            <button class="magnifire_btn">&#128269;</button>
+        </div>
+        <div>
+            <button>All Data</button>
+        </div>
+    </div>
+</form>
+
+
+<table>
+
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Date of Birth</th>
+        <th>Enrollment</th>
+        <th>Graduation</th>
+        <th>Former School</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+
+    </tr>
+
+</table>
+
+<script src="/static/js/index.js"></script>
+
+{%endblock%}

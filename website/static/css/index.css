@@ -1,0 +1,85 @@
+
+
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table tr th{
+    padding: 3vw;
+    padding-bottom: 0.5vw;
+    border-bottom: 2px solid black;
+}
+
+table tr td{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input{
+    width: 30vw;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+    color: #2C3E50;
+}
+
+button{
+    background-color: #2C3E50;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+@media (max-width:700px){
+    table{
+        width: 100vw;
+    }
+    table tr th{
+        font-size: 10px;
+    }
+    table tr td{
+        font-size: 7px;
+    }
+    input{
+        margin-left: 5px;
+    }
+    .label_add{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+    }
+}
+#add_Data{
+    display: none;
+}
+
+label{
+    background-color: #2C3E50;
+    padding-left: 25px; 
+    font-size: 15px;
+    padding-right: 25px;
+    color: white;
+    border: 1px solid black;
+}
+input{
+    border-radius: 100px;
+}
+.magnifire_btn{
+    background-color: white;
+    border: none;
+    margin-right: 10px;
+}

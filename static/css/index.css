@@ -1,91 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 
-ul{
-    list-style: none;
-    padding: 10px;
-    
-}
-li{
-    font-size: 2vi;
-    padding: 1vi;
-    display: inline;
-}
-.user{
-    font-size: 1.2vi;
-    margin-left: 28vw;
-}
-.title{
-    font-size: 2.6vi;
-}
-.container{
-    margin-top: 3vi;
-}
-.search_bar_div{
-    float: left;
-}
-.extra{
-    margin-left:7vw;
-    float: left;
-    margin-top: -1vw;
-}
-button{
-    width: 15vw;
-    background-color: rgb(120, 170, 170);
-    border: none;
-    border-radius: 50px;
-    height: 20px;
-}
-.under_button{
-    margin-top: 1vw;
-}
-input{
-    width: 20vw;
-    margin-left: 2vw;
-}
+
 table{
-    width: 100%;
-}
-table,tr,td{
-    
-    border: black solid 2px;
-}
-td{
-    padding: 2px;
-}
-
-th{
-    font-size: 1.6vi;
-}
-.setting_container{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.setting_container>div{
-    position: absolute;
-    display: grid;
-    justify-content: center;
-    background-color: blueviolet;
-    border: 15px solid;
-    width:30vw;
-    height: 250px;
-    margin-left: 32%;
-    
+table tr th{
+    padding: 3vw;
+    padding-bottom: 0.5vw;
+    border-bottom: 2px solid black;
 }
-.setting_container>div>button{
-    margin-top: -1vh;
-    margin-left: 25%;
-    background-color: aqua;
-}
-.close{
-    position: relative;
-    margin-left: 350px;
 
+table tr td{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
 }
-.close_btn{
-    width: 20px;
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input{
+    width: 30vw;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+    color: red;
+}
+
+button{
+    background-color: #2C3E50;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+@media (max-width:700px){
+    table{
+        width: 100vw;
+    }
+    table tr th{
+        font-size: 10px;
+    }
+    table tr td{
+        font-size: 7px;
+    }
+}
+#add_Data{
+    display: none;
+}
+label{
+    background-color: #2C3E50;
+    padding-left: 25px; 
+    font-size: 15px;
+    padding-right: 25px;
+    color: white;
+    border: 1px solid black;
+}
+input{
+    border-radius: 100px;
 }

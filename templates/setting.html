@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<link rel="stylesheet" href="/static/css/setting.css">
+<link rel="stylesheet" href="/static/css/container.css">
+<title> Settings </title>
+<meta charset="utf-8">
+{%endblock%}
+
+{%block body%}
+<body>
+
+    <header>
+        <ul class="ule">
+            <li class="h1_ul"><a href="/">Home</a></li>
+            <li>Bulk Data</li>
+            <li>Bulk New</li>
+            <li><a href="/setting">Setting</a> </li>
+            <li class="user">{USER}</li>
+            <li class="logout" > <button name="logout" class="btn">Logout</button> </li>
+        </ul>
+    </header>
+
+    <ul class="setting_ul">
+        <li>School</li>
+        <li>Course</li>
+        <li>User</li>
+        <li>Scale</li>
+    </ul>
+    
+    <div class="bilgiler">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maxime molestiae dolore. Maiores quia ipsum, soluta tempora suscipit et autem modi quam hic in doloremque optio officiis dolor molestiae itaque?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni hic, reprehenderit culpa sed adipisci, dolorem officia doloribus eos at, quaerat earum atque tenetur temporibus itaque nam beatae. Voluptates, error porro.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos, ipsam cupiditate suscipit vitae mollitia voluptatum iusto eveniet nesciunt, voluptas nam ad. Consequatur distinctio accusamus voluptatum pariatur, ipsam ex reprehenderit!
+        </p>
+    </div>
+
+</body>
+</html>
+{%endblock%}

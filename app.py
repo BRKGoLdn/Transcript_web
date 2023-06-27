@@ -1,11 +1,19 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def index():
     return render_template('index.html')
+
+@app.route('/setting')
+def setting():
+    return render_template('setting.html')
+
+@app.route('/transcript')
+def transcript():
+    return render_template('transcript.html')
 
 @app.route('/login',methods = ['POST', 'GET'])
 def login():

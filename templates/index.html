@@ -1,38 +1,41 @@
 {% extends 'base.html' %}
 
 {% block head %}
+<link rel="stylesheet" href="/static/css/container.css">
 <link rel="stylesheet" href="/static/css/index.css">
- <title> Home </title>
+<title> Home </title>
+<meta charset="utf-8">
 {%endblock%}
 
 {%block body%}
-<ul class="header">
-        <li class="title">Salahaldin International School Database For Transcript</li>
-        <li class="user">{user}</li>
-</ul>
+<header>
+    <ul class="ule">
+        <li class="h1_ul"><a href="/">Home</a></li> 
+        <li>Bulk Data</li>
+        <li>Bulk New</li>
+        <li><a href="/setting">Setting</a> </li>
+        <li class="user">{USER}</li>
+        <li class="logout" > <button name="logout" class="btn">Logout</button> </li>
+    </ul>
+</header>
 
 <div class="container">
-    <form method="POST">
-        <div class="search_bar_div">
-            <input type="search" name="search_bar" placeholder="Search for the Student You Want">
-        </div>
-    
-    </form>
-
-    <div class="extra">
-        <button>Add New</button>
-        <button>All Data</button>
-        <button id="setting">Settings</button>
-        <br>
-        <button class="under_button">Bulk New</button>
-        <button class="under_button">Bulk Data</button>
+    <div>
+        <input type="file" id="add_Data" name="add_Data">
+        <label for="add_Data">Add Data</label>
+        
     </div>
-</div>  
-
-<br><br><br><br>
+    <div>
+        <input type="search" placeholder="Enter the Name of the Student">
+    </div>
+    <div>
+        <button>All Data</button>
+    </div>
+</div>
 <table>
+
     <tr>
-        <th>Student ID</th>
+        <th>Student Id</th>
         <th>Student Name</th>
         <th>Date of Birth</th>
         <th>Enrollment</th>
@@ -41,33 +44,17 @@
         <th>Gender</th>
     </tr>
     <tr>
-        <td>{studentID}</td>
-        <td>{name}</td>
-        <td>{dateofbirth}</td>
-        <td>{enrollment}</td>
-        <td>{graduation}</td>
-        <td>{formerschool}</td>
-        <td>{gender}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+        <td>{}</td>
+
     </tr>
+
 </table>
-
-<div class="setting_container" id="setting_container" style="display: none;">
-    <div>
-        <span class="close" id="close"><button class="close_btn" id="close_btn">&times;</button> </span>
-        <button>School</button>
-        <button>Academic Years</button>
-        <button>Courses</button>
-        <button>Grades</button>
-        <button>Scale</button>
-        <button>Users</button>
-        <button>Finalize Academic Support</button>
-        
-    </div>
-    
-
-</div>
-
-
 
 <script src="/static/js/index.js"></script>
 
